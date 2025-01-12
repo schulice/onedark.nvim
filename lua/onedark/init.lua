@@ -21,7 +21,7 @@ function M.colorscheme()
     if vim.o.background == 'light' then
         M.set_options('style', 'light')
     elseif vim.g.onedark_config.style == 'light' then
-        M.set_options('style', 'light')
+        M.set_options('style', 'dark')
     end
     require('onedark.highlights').setup()
     require('onedark.terminal').setup()
